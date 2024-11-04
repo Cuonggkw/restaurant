@@ -1,0 +1,10 @@
+version: "4.33.1"
+services:
+  db:
+    image: mysql:8.0
+    restart: always
+    environment:
+      - MYSQL_DATABASE=restaurant
+      - MYSQL_ROOT_PASSWORD=123456
+    ports:
+      - '3307:3306'
